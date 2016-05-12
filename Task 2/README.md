@@ -13,5 +13,5 @@ Outline:
 * The budget
 * Organizational information
 * Letter proposal
-* Conlusion
+* Conclusion
 
