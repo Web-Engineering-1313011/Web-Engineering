@@ -6,29 +6,29 @@
 
 * Web需求特性
 
-  —complete by 
+  —complete by 古国亮 & 林增
 
 * Web需求获取
 
-  —complete by 
+  —complete by 郭泰成 & 黄超敏
 
 * Web需求表示
 
-  —complete by 
+  —complete by 周桦 & 彭琦
 
 * Web需求确认与验证
 
-  —complete by 
+  —complete by 王谞上
 
 * Web需求管理
 
-  —complete by 
+  —complete by 高海硕 & 袁点
 
 * Web需求工具
 
-  —complete by 
+  —complete by 林增跃
 
 * 总结与展望
 
-  —complete by 
+  —complete by 林增跃
 
