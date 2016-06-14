@@ -10,11 +10,11 @@
 
   —complete by 王谞上 & 周桦
 
-* 导航建模
+* 超文本建模
 
   —complete by 袁点 & 高海硕
 
-* 过程建模
+* 适应性建模
 
   —complete by 黄超敏 & 郭泰成
 
