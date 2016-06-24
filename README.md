@@ -44,15 +44,3 @@ PS. The folder named *"Presentation"* includes the PPT of presentation,if you ca
 We release the App via the Internet , Mobile users may use the App by URL ; user can also download our source files from GitHub and open the "index.html" file to use the App. 
 
 ## Launch
-
- *Login in*![登录界面-232](Data/登录界面-232.jpg)
-
-*Launch*
-
-![启动界面-390](Data/启动界面-390.jpg)
-
-*Setting*
-
-![设置界面-251](Data/设置界面-251.jpg)
-
-*main* ![主界面副本-305](Data/主界面副本-305.jpg)
