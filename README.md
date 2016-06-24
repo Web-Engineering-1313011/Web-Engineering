@@ -29,7 +29,7 @@ PS. The folder named *"Presentation"* includes the PPT of presentation,if you ca
 
 ***Browser:*** Safari , Google Chrome
 
-***Language :*** HTML/CSS , Javascript , Python
+***Language :*** HTML/CSS , Javascript , Ruby
 
 ## Operating Environment
 
