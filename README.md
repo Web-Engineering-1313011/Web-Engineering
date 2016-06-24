@@ -15,5 +15,7 @@ Members:
 * 13130110031 袁点  
 * 13130110006 林增跃
 
+PS. The folder named *"Presentation"* includes the PPT of presentation,if you can't open the *.key* file ,you can open the *"index.html"* .(Advice to use chrome!)
+
 *Have fun!*
 
