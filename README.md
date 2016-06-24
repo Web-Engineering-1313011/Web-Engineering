@@ -2,6 +2,8 @@
 
 > Always believe that something wonderful is about to happen.
 
+## Introduce
+
 This is an organization to complete the tasks for *Web Engineering*.All the members are from XiDian university.
 
 Members:
@@ -19,3 +21,36 @@ PS. The folder named *"Presentation"* includes the PPT of presentation,if you ca
 
 *Have fun!*
 
+## Development Environment
+
+***OS:*** OS X 10.11.4 , Windows 7/10
+
+***Editor/IDE:*** Sublime Text 3 , Pycharm , IDLE 3 , WebStorm
+
+***Browser:*** Safari , Google Chrome
+
+***Language :*** HTML/CSS , Javascript , Python
+
+## Operating Environment
+
+***OS:*** OS X 10.6 or later , Windows XP/Vista/7/8/8.1/10 , Unix/Linux and iOS , Android.
+
+***Brower:*** Safari , Google Chrome , Opera , IE 9 or later , Edge
+
+## How to use
+
+We release the App via the Internet , Mobile users may use the App by URL ; user can also download our source files from GitHub and open the "index.html" file to use the App. 
+
+## Launch
+
+ *Login in*![登录界面-232](Data/登录界面-232.jpg)
+
+*Launch*
+
+![启动界面-390](Data/启动界面-390.jpg)
+
+*Setting*
+
+![设置界面-251](Data/设置界面-251.jpg)
+
+*main* ![主界面副本-305](Data/主界面副本-305.jpg)
