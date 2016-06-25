@@ -31,13 +31,15 @@ PS. The folder named *"Presentation"* includes the PPT of presentation,if you ca
 
 ***Browser:*** Safari , Google Chrome
 
-***Language :*** HTML/CSS , Javascript , Ruby
+***Language :*** HTML/CSS , Javascript , Python 2.x with web.py and MySQLdb.py
 
 ## Operating Environment
 
 ***OS:*** OS X 10.6 or later , Windows XP/Vista/7/8/8.1/10 , Unix/Linux and iOS , Android.
 
 ***Brower:*** Safari , Google Chrome , Opera , IE 9 or later , Edge
+
+***Other:*** MySQL ,  Python 2.x with web.py and MySQLdb.py
 
 ## How to use
 
