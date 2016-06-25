@@ -1,0 +1,188 @@
+$def with(todos)
+$:render.header()
+
+            <div id="wasteper">
+              <div id="left-side">
+                <ul>
+                  <li class="list active">
+                    <div class="icon active">
+                      <svg viewBox="0 0 32 32">
+                        <g filter="">
+                          <use xlink:href="#package"></use>
+                        </g>
+                      </svg>
+                    </div>
+                    列表
+                  </li>
+                  <li class="add">
+                    <div class="icon">
+                      <svg viewBox="0 0 32 32">
+                        <g filter="">
+                          <use xlink:href="#credit-card"></use>
+                        </g>
+                      </svg>
+                    </div>
+                    添加
+                  </li>
+                  <li class="waste">
+                    <div class="icon">
+                      <svg viewBox="0 0 32 32">
+                        <g filter="">
+                          <use xlink:href="#waste"></use>
+                        </g>
+                      </svg>
+                    </div>
+                    废纸篓
+                  </li>
+                  <li class="me">
+                    <div class="icon">
+                      <svg viewBox="0 0 32 32">
+                        <g filter="">
+                          <use xlink:href="#credit-card"></use>
+                        </g>
+                      </svg>
+                    </div>
+                    我
+                  </li>
+                </ul>
+              </div>
+
+              <div id="border">
+                <div id="line" class="one"></div>
+              </div>
+
+              <div id="right-side">
+
+                <div id="first" class="active">
+                    <p>待办事项</p>
+                    <ul>
+                        $for todo in todos:
+                            $if todo.finished == 1:
+                                $ status = 'class="finished"'
+                            $else:
+                                $ status = ''
+                            <li $:status>
+                                $if todo.finished == 0:
+                                    $todo.title
+                                    &nbsp;
+                                    <a href="/todo/$todo.id/finish?status=yes">完成</a>,
+                                $if todo.finished == 1:
+                                    <del>$todo.title</del>
+                                    &nbsp;
+                                    <a href="/todo/$todo.id/finish?status=no">恢复</a>,
+                                <a href="/todo/$todo.id/edit">修改</a>,
+                                <a href="/todo/$todo.id/delete" onclick="return confirm('删除以后不能恢复的，确定？')">删除</a>
+                            </li>
+                    </ul>
+                </div>
+
+                <div id="second">                
+                    <h2>新增</h2>
+                    <form action="/todo/new" method="post" id="post_new">
+                        <p><input type="text" name="title" class="long_txt" /></p>
+                        <p><input type="submit" class="submit" value="添加" /></p>
+                    </form>
+                </div>
+
+                <div id="third">
+                  <h1>We will waste it</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at viverra est, eu finibus mauris. Quisque tempus vestibulum fringilla. Morbi tortor eros, sollicitudin eu arcu sit amet, aliquet sagittis dolor. </p>
+                </div>
+
+                <div id="fourth">
+                  <h1>me it</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at viverra est, eu finibus mauris. Quisque tempus vestibulum fringilla. Morbi tortor eros, sollicitudin eu arcu sit amet, aliquet sagittis dolor. </p>
+                </div>
+
+              </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src='$config.static/jquery.js'></script>
+    <script>
+    $('.list').click(function () {
+        $('.list').addClass('active');
+        $('.list > .icon').addClass('active');
+        $('.add').removeClass('active');
+        $('.waste').removeClass('active');
+        $('.me').removeClass('active');
+        $('.add > .icon').removeClass('active');
+        $('.waste > .icon').removeClass('active');
+        $('.me > .icon').removeClass('active');
+        $('#line').addClass('one');
+        $('#line').removeClass('two');
+        $('#line').removeClass('three');
+        $('#line').removeClass('four');
+        $('#first').addClass('active');
+        $('#second').removeClass('active');
+        $('#third').removeClass('active');
+        $('#fourth').removeClass('active');
+    });
+    $('.add').click(function () {
+        $('.add').addClass('active');
+        $('.add > icon').addClass('active');
+        $('.list').removeClass('active');
+        $('.waste').removeClass('active');
+        $('.me').removeClass('active');
+        $('.list > .icon').removeClass('active');
+        $('.waste > .icon').removeClass('active');
+        $('.me > .icon').removeClass('active');
+        $('#line').addClass('two');
+        $('#line').removeClass('one');
+        $('#line').removeClass('three');
+        $('#line').removeClass('four');
+        $('#first').removeClass('active');
+        $('#second').addClass('active');
+        $('#third').removeClass('active');
+        $('#fourth').removeClass('active');
+    });
+    $('.waste').click(function () {
+        $('.waste').addClass('active');
+        $('.waste > .icon').addClass('active');
+        $('.add').removeClass('active');
+        $('.list').removeClass('active');
+        $('.me').removeClass('active');
+        $('.add > .icon').removeClass('active');
+        $('.list > .icon').removeClass('active');
+        $('.me > .icon').removeClass('active');
+        $('#line').addClass('three');
+        $('#line').removeClass('two');
+        $('#line').removeClass('one');
+        $('#line').removeClass('four');
+        $('#first').removeClass('active');
+        $('#second').removeClass('active');
+        $('#third').addClass('active');
+        $('#fourth').removeClass('active');
+    });
+    $('.me').click(function () {
+        $('.me').addClass('active');
+        $('.me > .icon').addClass('active');
+        $('.add').removeClass('active');
+        $('.waste').removeClass('active');
+        $('.list').removeClass('active');
+        $('.add > .icon').removeClass('active');
+        $('.waste > .icon').removeClass('active');
+        $('.list > .icon').removeClass('active');
+        $('#line').addClass('four');
+        $('#line').removeClass('two');
+        $('#line').removeClass('three');
+        $('#line').removeClass('one');
+        $('#first').removeClass('active');
+        $('#second').removeClass('active');
+        $('#third').removeClass('active');
+        $('#fourth').addClass('active');
+    });
+    
+    </script>
+
+    <div class="foot">
+        Copyright&copy; $config.site_name
+        作者： <a href="https://github.com/HaishuoGao/">Gao Haishuo</a>
+        &nbsp;
+        访问我们的 GitHub 项目网站：
+        <a href="https://github.com/Web-Engineering-1313011/Web-Engineering/" target="_blank">https://github.com/Web-Engineering-1313011/Web-Engineering</a>
+    </div>
+    </body>
+</html>
